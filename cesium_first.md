@@ -3,11 +3,11 @@
 ## 第一：下载并运行项目
 1. 从github中克隆Cesium源码项目，链接：<https://github.com/CesiumGS/cesium.git> ,建议直接下载包，clone会比较慢。
 2. 项目下载完成后，进行一下操作
-``
+```
 npm install;
 npm run build;
 npm start;
-``
+```
 完成以上操作之后，项目开始运行，在浏览器中输入: <localhost:8080>查看项目
 
 ## 第二：CesiumWidget
