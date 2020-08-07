@@ -38,4 +38,4 @@ npm start;
 
 > Scene中图元都是一笔绘制出来的。绘制的批次越少，渲染所需要的性能越少。
 
-![avatar](http://img.xslease.com/CesiumWidget%E5%AF%B9%E8%B1%A1.png)
+![avatar](/img/CesiumWidget_Object.png)
