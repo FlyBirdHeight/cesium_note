@@ -86,7 +86,7 @@ model.readyPromise
 
 **注：文档在项目中查看需要运行``npm run generateDocuumentation``命令，然后可以在项目首页中查看到Document选项，点进去后即可查看文档**
 
-4.事件的包装
+4. 事件的包装
 ```
 var handler = new Cesium.ScreenSpaceEventHandler(scene.canvas);
 handler.setInputAction(function (movement) {
@@ -110,3 +110,24 @@ handler.setInputAction(function (movement) {
 > movement.endPosition相当于鼠标所处的位置(二维窗口中的位置)。scene.pick为场景中的拾取动作(就是在场景中创建了一条射线，观察在三维场景中与哪一个三维物体发生了求交关系，找到最近的一个求交关系并进行反馈)。
 
 **注：所有的UI图形界面的操作均是由knockout.js来提供的**
+
+**``ModelInstanceCollection``类对象的意思为模型实例集合，即不需要一个一个去手动创建Model,可以通过``ModelInstanceCollection``去批量创建Model,但是其渲染批次不是用一批，而是分批次渲染，渲染批次不定**
+
+5. Model子节点控制，具体实例地址在: <http://localhost:8080/Apps/Sandcastle/index.html?src=development%2F3D%20Models%20Node%20Explorer.html&label=Development>
+```
+Cesium.knockout
+      .getObservable(viewModel, "matrix")
+      .subscribe(function (newValue) {
+        var node = model.getNode(viewModel.nodeName);
+        if (!Cesium.defined(node.originalMatrix)) {
+          node.originalMatrix = node.matrix.clone();
+        }
+        node.matrix = Cesium.Matrix4.multiply(
+          node.originalMatrix,
+          newValue,
+          new Cesium.Matrix4()
+        );
+      });
+  })
+```
+此段代码示例涉及到子节点控制改变。
