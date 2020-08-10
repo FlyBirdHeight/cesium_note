@@ -89,3 +89,6 @@ function inReferenceFrame() {
 
 3. Point
 **关于Point,如上,附上文档地址: <http://localhost:8080/Build/Documentation/PointPrimitive.html?classFilter=Point>,演示地址：<http://localhost:8080/Apps/Sandcastle/index.html?src=development%2FPointPrimitives.html&label=Development>**
+
+3. Polyline
+**关于Polyline,如上,附上文档地址: <http://localhost:8080/Build/Documentation/Polyline.html?classFilter=PolyLine>,演示地址：<http://localhost:8080/Apps/Sandcastle/index.html?src=development%2FPolylines.html&label=Development>**
