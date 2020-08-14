@@ -92,3 +92,4 @@ function inReferenceFrame() {
 
 3. Polyline
 **关于Polyline,如上,附上文档地址: <http://localhost:8080/Build/Documentation/Polyline.html?classFilter=PolyLine>,演示地址：<http://localhost:8080/Apps/Sandcastle/index.html?src=development%2FPolylines.html&label=Development>**
+> 关于``PolylineCollection``与``PolylineGeometry``之间的区别,``PolylineCollection``的性能更加的高，但是相对于``PolylineGeometry``来说所可以设置的属性存在限制，不如``PolylineGeometry``可设置的属性多。所以在选择究竟该使用哪一个时，若无过多属性设置时，优先选用``PolylineCollection``。
