@@ -76,9 +76,9 @@ model.readyPromise
     });
 }
 ```
->colorBlendMode函数用于控制模型的颜色混合模式，分别有：Highlight(高亮)、Replace(替代)、Mix(混合)三种形式。具体效果可以在展示页中查看。
+> ``colorBlendMode``函数用于控制模型的颜色混合模式，分别有：Highlight(高亮)、Replace(替代)、Mix(混合)三种形式。具体效果可以在展示页中查看。
 
->Cesium.Color.fromAlpha函数用于控制模型的透明度设置。
+> ``Cesium.Color.fromAlpha``函数用于控制模型的透明度设置。
 
 > camera(相机),通过lookAt函数来调整视角(不仅设置了初始角度，同时绑定了模型的所在的位置并且不会发生改变)。在lookAt函数中的第一个参数center即为模型的正中心(可自行定义)，第二个参数为视角的角度与距离。Cesium.HeadingPitchRange函数代表了视角的角度与距离视角的距离，第一个参数Heading(头部角度)、第二个参数Pitch(抬头低头角度)、第三个参数则为距离视角的距离。
 
