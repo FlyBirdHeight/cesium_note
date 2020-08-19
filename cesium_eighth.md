@@ -66,7 +66,7 @@
    </tr>
 </table>
 
-
+**``Scene``类的文档地址:<http://localhost:8080/Build/Documentation/Scene.html?classFilter=scene>**
 
 
 2. ``Camera``的基本操作(示例地址:<http://localhost:8080/Apps/Sandcastle/index.html?src=Camera.html&label=All>)
